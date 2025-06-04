@@ -1,37 +1,35 @@
 # single quote
-print('Hello world')
+print('single quote')
+
 # double quote
-print("Hello world")
+print("double quote")
 
-# menggunakan backlash \
-# membuat tanda ' jadi string
-print('hari ini adalah hari jum\'at')
-
-print("C:\\user\\kilal")
+# backlash \ membuat ' dan \ jadi string
+print('hari ini adalah g\'day')
+print('C:\\user\\kilal')
 
 # newline \n \r \r\n
-print("Baris pertama.\nBaris kedua.")
+print('baris pertama.\nbaris kedua')
 
-#tab
-print("Jajang\t\t\tkilal, jadi jauhan")
+# tab
+print('jajang \t\t\tkilal jadi jauhan')
 
-#backspace
-print("jajang \bkilal, jadi dekatan")
+# backspace
+print('jajang \bkilal jadi deketan')
 
-#raw
-print("C:\new folder") # yang ini salah
-print(r"C:\new folder") # yang ini benar
+# raw
+print(r'C:\user\kilal')
 
-#multiline gak bisa pakek tanda \
-print("""
+# multiline gak bisa pakek \
+print('''
 Nama : kilal
-Kelas : 2 Man
-website : www.kilalganteng.com/news
-""")
+Kelas : 2 man
+Website : www.kilal.com/news         
+''')
 
-#multiline dan raw bisa pakek tanda \
-print(r"""
-Nama : kilal
-Kelas : 2 Man
-Website: www.kilalganteng.com\news
-""")
+# multiline dan raw
+print(r'''
+Nama : Jajang
+kelas : 3 sma
+Website : www.jajang.com\news      
+''')

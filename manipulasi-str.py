@@ -1,67 +1,51 @@
-# merubah semua menjadi upper cass
+# operasi dan manipulasi string
 
-sapa = "bre"
-print("Normal = " + sapa)
-salam = sapa.upper()
-print("UPPER = " + salam)
+# 1. menyambung string (concatenate)
+nama_pertama = "Kilal"
+nama_tengah = "D"
+nama_akhir = "goodboy"
 
-print(20*"=")
+nama_lengkap = nama_pertama + " " + nama_tengah + "'" + nama_akhir
+print(nama_lengkap)
 
-# lower case
-sopo = "AkHu GaNtEnGsS"
-print("Normal = " + sopo)
-jarwo = sopo.lower()
-print("LOWER = " + jarwo)
+# 2. menghitung panjang string
+panjang = len(nama_lengkap)
+print("panjang dari " + nama_lengkap + " adalah " + str(panjang))
 
-print(20*"=")
+# 3. operator umtuk string
+# mengecek apakah ada komponen char atau string di string
 
-# mengecek apakah lower atau UPPER
-# setiap hasilnya akan bool jadi harus diubah
-cantik = "oline"
-apakah_lower = cantik.islower()
-print(cantik + " is lower = " + str(apakah_lower))
-apakah_upper = cantik.isupper()
-print(cantik + " is upper = " + str(apakah_upper))
+k = "K" # yang dicari harus sama huruf besar atau kecilnya
+status = k in nama_lengkap
+print(k + " ada di " + nama_lengkap + " = " + str(status))
 
-print(20*"=")
+k = "k" # yang dicari harus sama huruf besar atau kecilnya
+status = k in nama_lengkap
+print(k + " ada di " + nama_lengkap + " = " + str(status))
 
-# mengecek judul
-judul = "Kilal Dan Oline"
-cek_judul = judul.istitle()
-print(judul + " Is title = " + str(cek_judul))
+k = "K" # yang dicari harus sama huruf besar atau kecilnya
+status = k  not in nama_lengkap
+print(k + " tidak ada di " + nama_lengkap + " = " + str(status))
 
-print(20*"=")
+# mengulang string
+# print("wk" tanda bintang10)
 
-# mengecek komponen startswith() dan endswith()
-erine = "Angry girl".startswith("Angry")
-print("start = " + str(erine))
+#indexing
+# lalier
 
-kimmy = "Lucu banget".endswith("banget")
-print("end = " + str(kimmy))
+# item paling kecil
+print("Paling kecil : " + min(nama_lengkap))
 
-print(20*"=")
+# item paling besar
+print("Paling besar : " + max(nama_lengkap))
 
-# penggabungan komponen join() split()
-pisah = ['aku','sayang','oline']
-gabungan = ','.join(pisah)
-print(pisah)
-print(gabungan)
-naonwe = "aku,sayang,kamu"
-print(naonwe.split(','))
+ascii_code = ord(" ")
+print("ASCII code untuk spasi adalah " + str(ascii_code))
+data = 117
+print("char untuk ASCII code adalah " + chr(data))
 
-print(20*"=")
+# 4. operator dalam bentuk method
 
-# alokasi karakter rjust() ljust() center()
-
-kanan = "kilalz".rjust(10)
-print("'" + kanan + "'")
-
-kiri = "kilalz".ljust(10)
-print("'" + kiri + "'")
-
-tengah = "kilalz".center(20,":")
-print("'" + tengah + "'")
-
-# kebalikannya --> strip()
-oiy = "kilalz".strip(":")
-print("'" + oiy + "'")
+dataa = "otong sorotong"
+jumlah = dataa.count("t")
+print("jumlah t pada " + dataa + " adalah " + str(jumlah))

@@ -1,20 +1,16 @@
-def main():
-    print("dear seseorang maukah kau menjadi kekasihku.")
-    print("1. mau")
-    print("2. tidak")
-    print("3. aku gak suka pacaran")
+print('Welcome to dapurkilal')
+print('kami menyediakan beberapa menu, diantaranya')
+print('1. pepes hiu')
+print('2. dinosaurus goreng')
+print('3. sambel ganja')
 
-    choice = input("masukkan pilihan==> ")
+data = input('Masukkan pilihan:')
 
-    if choice == "mau" or choice == "1":
-        print("Alhamdulilah")
-    elif choice == "tidak" or choice == "2":
-        print("yah kirain mau")
-    elif choice == "aku gak suka pacaran" or choice == "3":
-        print("Bacot lu ngentot")
-    else:
-        print("Pilihan tidak valid.")
-
-if __name__ == "__main__":
-    main()
-    
+if data == '1':
+    print('Maaf, menu ini sudah habis >.<')
+elif data == '2':
+    print('Maaf, dinosaurus nya sudah punah')
+elif data == '3':
+    print('Haram bego!!')
+else:
+    print('masukkin pilihan mekk!!')
